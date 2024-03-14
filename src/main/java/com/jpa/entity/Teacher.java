@@ -28,14 +28,14 @@ public class Teacher {
     private Long teacherId;
     private String firstName;
     private String lastName;
-
-    @OneToMany(
+//One teacher is related to the many courses.
+/*    @OneToMany(
             cascade = CascadeType.ALL
     )
     @JoinColumn(
             name = "teacher_id",
             referencedColumnName = "teacherId"
-    )
-    private List<Course> courses;
+    )*/
+//    private List<Course> courses;
 
 }

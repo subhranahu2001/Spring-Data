@@ -5,6 +5,9 @@ import com.jpa.entity.Teacher;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import java.util.List;
 
@@ -27,7 +30,7 @@ class TeacherRepositoryTest {
         Teacher teacher = Teacher.builder()
                 .firstName("Durga")
                 .lastName("Barik")
-                .courses(List.of(courseDBA,courseJava))
+//                .courses(List.of(courseDBA,courseJava))
                 .build();
 
         teacherRepository.save(teacher);
